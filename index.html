@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WebAssembly</title>
+</head>
+<body>
+	<div><h1>WebAssembly</h1></div>
+<div><img src="photo.png"width="500" height="300"></div>
+
+<h2>WebAssembly: l'ère de naissance d'un nouveau langage de programmation</h2>
+
+<h3>Qu'est-ce que le WebAssembly?</h3>
+
+<p>WebAssembly (abrégé en Wasm) est un format d’instructions binaires pour une machine virtuelle à base de pile.
+(Définition extrait du site webassembly.org)</p>
+
+<p> Wasm est conçu comme une cible portable de la compilation de langages [de programmation] de haut niveau comme le C, C++, Rust, facilitant le 
+déploiment sur le Web d’application côté client comme serveur.</p>
+
+<h3> Le but de la création Wasm</h3>
+
+<p>WebAssembly est conçu pour maintenir la nature sans version, testée et rétrocompatible du Web . Les modules WebAssembly pourront appeler et sortir du contexte JavaScript et accéder aux fonctionnalités du navigateur via les mêmes API Web accessibles à partir de JavaScript. WebAssembly prend également en charge les intégrations non Web .</p>
+
+<h3>Historique de la création du WebAssembly</h3>
+<p><div>-Juin 2015 : annonce de WASM ;</div>
+
+<div>-Création du WebAssembly Community Group avec des représentants des équipes de développement des navigateurs web telles que: Chrome, Edge, Firefox, WebKit.</div>
+
+<div>-Mars 2017 : MVP de l’API WASM (fin des pré-versions expérimentales des navigateurs);</div>
+
+<div>-Novembre 2017 : support de tous les navigateurs majeurs;</div>
+
+<div>-Mars 2019 : annonce de WASI (WebAssembly en dehors du navigateur);</div>
+
+<div>-Décembre 2019 : publication de WASM Core 1.0, une technologie récente qui est disponible dans 4 principaux moteurs de navigation Chrome, Mozilla, safari et Explore. </p>
+</div>
+
+<h3> Objectifs et avantages de la création de ce nouveau bijou dans le monde du web</h3>
+
+<p>Rapidité:</p >
+<ol>La rapidité est l’un des points clés de WebAssembly. Car le code est rapide à télécharger et à l’exécuter.</ol>
+
+<p>Portabilité:</p>
+<ol>Cette technologie orientée pour le Web fonctionne quel que soit le Sytème d’Exploitation cible et quelque plateforme matérielle.</ol>
+
+<p>Lisibilité</p>
+<ol>La lisibilité du code doit favoriser la mise au point et les corrections.
+Cet objectif reste à réaliser. Dans le fonctionnement actuel, la lisibilité du code repose sur le langage source.</ol>
+
+<p>Sécurité:</p>
+<ol>Dans l’environnement du Web inter-connecté, les questions de sécurité sont tout de suite mises en avant. Toutefois, l’exécution ne doit pas diminuer les capacités de fonctionnement du navigateur ou mettre même en danger le fonctionnement du Système d’Exploitation hôte. Dans ce cas, l’utilisation systématique d’une mécanique de « bac à sable » s’est donc imposée.</ol>
+
+<p> Un plus dans le système: WASI</p>
+
+<ol>Une des limites de WebAssembly est l’impossibilité d’accéder aux ressources locales du client (notamment les fichiers), du fait de l’exécution dans le navigateur, pour raisons de sécurité.</ol>
+
+<ol>WASI (WebAssembly System Interface)  qui est en développement à l’heure actuelle permettra de s’affranchir de cette limite, en autorisant l’exécution en dehors du navigateur.</ol>
+
+<h3>Quelques domaines d’utilisation de WebAssembly </h3>
+<p> Dans le navigateur :
+<ol>Vision par ordinateur</ol>
+<ol>Manipulation d’image / de vidéo</ol>
+
+<ol>Jeux vidéos</ol>
+
+<ol>Réalité virtuelle / augmentée</ol>
+
+<ol>Emulation matérielle</ol>
+
+<ol>Cryptage</ol>
+
+De façon générale, toute application consommatrice de ressource processeur, de calculs intensifs est concernée.</p>
+
+<p>En dehors du navigateur
+
+<ol>Jeux vidéos</ol>
+<ol>Exécution de code non vérifié côté serveur</ol>
+
+<ol>Application côté serveur</ol>
+
+<ol>Applications mobiles hybrides (application mobile liée à un ou plusieurs serveurs)</ol></p>
+
+
+<h3>Comment utiliser WebAssembly ?</h3>
+
+<p>WebAssembly est une technologie destinée aux développeurs. Cette partie présente de façon illustrée, par un exemple très simple, les principes d’utilisation simplifiée des outils actuels.</p>
+<h4>Schéma général</h4>
+
+<p>Voici le schéma de fonctionnement général présenté par la fondation Mozilla qui mène le développement du navigateur Firefox :</p>
+<img src="01-WebAssemblyUse-1024x494.png"width="500" height="300">
+
+
+<h4>Les formats sources</h4>
+
+<p> WebAssembly n’a pas été prévu pour être programmé directement, mais plutôt comme du code intermédiaire proche des instructions de base des processeurs. Le programmeur dispose donc du code source dans le langage de haut niveau (C, C++ ou Rust), que le compilateur transforme en un code binaire ou texte Wasm très proche de 
+l’assembleur, et c’est ensuite le navigateur qui traduit en code machine pour le processeur dans son bac à sable WebAssembly.</p>
+
+Voici une comparaison des différentes versions d’un programme écrit en C lors du passage par WebAssembly.
+
+<p><img src="02-WebAssemblyCodes-1024x593.png"width="500" height="300"><p>
+<p>Différents codes sources</p>
+
+<h3>Exemples d’applications actuelles</h3>
+
+<p>WebAssembly n’est pas qu’un format pour développeur à la pointe du progrès. Il existe déjà des applications distribuées de cette manière par des éditeurs logiciels de premier plan.</p>
+<ol>exemple : AutoCAD : https://web.autocad.com et Google Earth Web : https://earth.google.com/web/ <ol>
+
+<h2><ul>Conclusion</ul></h2>
+
+<p>WebAssemly est une technologie à suivre, par ses capacités de migrer des applications d’envergure vers un format très adapté au déploiement sur le Web. Nul doute qu’elle va se répandre de façon considérable dans le monde applicatif distribué.</p>
+
+
+</body>
+</html>
+
